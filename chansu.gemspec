@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ['escalderongv@gmail.com']
 
   spec.summary = 'A Ruby DSL for probabilities, randomness, and dice.'
-  spec.description = '\
+  spec.description = '
     Chansu is a Ruby DSL for working with randomness and probability.
     It provides helpers like `chance("35%")`, `dice(6, 3)`, and RPG-style
     aliases such as `d20` and `d100`. It also includes higher-level

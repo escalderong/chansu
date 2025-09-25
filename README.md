@@ -36,6 +36,33 @@ Or just do
 ---
 
 ## 🛠️ Usage
+
+### Basic chance
+```ruby
+chance          # true/false with 50% chance
+chance(10)      # 10% chance
+chance(0.65)    # 60% chance
+chance("38%")   # 38% chance
+```
+It also receives a block
+```ruby
+chance(40) {
+    puts "There's a 40% chance this was printed"
+}
+```
+
+### Loop until probability is met
+You are provided with two methods that take a block and execute it until it either success or fails
+```ruby
+until_success {
+    p "this will be printed until it is successfull!"
+}   #returns the number of attempts it took
+
+until_failure(chance: 0.1, max_attempts: 25) {
+    p "this will be printed until it fails or hits 25 attempts!"
+}   #returns the number of attempts it took
+```
+Keep in mind the arguments work for both methods
 ### Probability DSL
 ```ruby
 require "chansu"
@@ -70,6 +97,7 @@ always   { puts "Guaranteed!" }     # 100%
 ```ruby
 require "chansu"
 
+coin            # :tails or :heads
 dice            # 2
 dice(42)        # 31
 dice(15, 3)     # [15, 9, 15]
@@ -78,7 +106,9 @@ d20             # 11
 d100            # 90
 dice("2d10")    # {:rolls=>[9, 5], :total=>14}
 dice("3d8+5")   # {:rolls=>[3, 3, 4], :total=>15}
+roll            # is an alias of dice
 ```
+
 ---
 ## ⚙️ Config 
 ### Controlling globals
