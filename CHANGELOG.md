@@ -6,7 +6,7 @@
 
 ## [0.1.1] - 2025-09-25
 
-- Minor adjustemnts
+- Minor adjustments
 
 ## [0.1.0] - 2025-09-25
 
