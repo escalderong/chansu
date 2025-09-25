@@ -62,4 +62,8 @@ module Chansu
   def rarely
     chance(0.1) { yield if block_given? }
   end
+
+  def never
+    chance(0.00001) { yield if block_given? } # never say never
+  end
 end

@@ -9,7 +9,6 @@ gem 'irb'
 gem 'rake', '~> 13.0'
 
 group :development, :test do
-  gem 'rubocop', '~> 1.81'
   gem 'rspec'
+  gem 'rubocop', '~> 1.81'
 end
-

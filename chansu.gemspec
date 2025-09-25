@@ -9,21 +9,20 @@ Gem::Specification.new do |spec|
   spec.email = ['escalderongv@gmail.com']
 
   spec.summary = 'A Ruby DSL for probabilities, randomness, and dice.'
-  spec.description = " \
+  spec.description = '\
     Chansu is a Ruby DSL for working with randomness and probability.
     It provides helpers like `chance("35%")`, `dice(6, 3)`, and RPG-style
     aliases such as `d20` and `d100`. It also includes higher-level
     constructs like `often { ... }`, `rarely { ... }`, and `until_success`
     for expressive probabilistic logic. Useful for games, simulations,
-    and playful Ruby experiments."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+    and playful Ruby experiments.'
+  spec.homepage = 'https://github.com/escalderong/chansu'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.2.0'
 
-  spec.metadata['allowed_push_host'] = "TODO: Set to your gem server 'https://example.com'"
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = "TODO: Put your gem's public repo URL here."
-  spec.metadata['changelog_uri'] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata['source_code_uri'] = 'https://github.com/escalderong/chansu'
+  spec.metadata['changelog_uri'] = 'https://github.com/escalderong/chansu/blob/master/CHANGELOG.md'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

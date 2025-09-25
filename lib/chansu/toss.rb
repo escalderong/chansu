@@ -36,10 +36,4 @@ module Chansu
   class << self
     alias roll dice
   end
-
-  [4, 6, 8, 10, 12, 20, 100].each do |sides|
-    Chansu.define_method("d#{sides}") do |times = 1|
-      dice(sides, times)
-    end
-  end
 end
