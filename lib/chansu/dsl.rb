@@ -66,4 +66,6 @@ module Chansu
   def never
     chance(0.00001) { yield if block_given? } # never say never
   end
+
+  extend self
 end
